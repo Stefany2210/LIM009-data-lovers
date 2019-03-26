@@ -12,6 +12,7 @@
   for (let x = 0; x < dataPok.length; x++) {
     alphabet.push(dataPok[x].name);
   }
+  console.log(alphabet)
   const result = alphabet.sort();
   //console.log(dataPok[x].name);
   return result;
