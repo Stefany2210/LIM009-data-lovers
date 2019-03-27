@@ -1,32 +1,26 @@
+//para mostrar el listado de Pokemons
 const dataPok = POKEMON.pokemon
-const arrValues = Object.values(dataPok)
 const result = document.getElementById('result');
-const addPokemon = (pokemon) => {
-<<<<<<< HEAD
-  //console.log(pokemon)
-  for (let i = 0; i < pokemon.length; i++) {
+const listPokemon = document.getElementById("list-Pokemon");
+listPokemon.addEventListener("click",()=>{
+  for (let i = 0; i <dataPok.length; i++) {
     result.innerHTML += `
-    <div>
+    <div class="pokemon">
       <figure>
-      <img src="${pokemon[i].img}" alt="perfil">
+      <img src="${dataPok[i].img}" alt="perfil">
       </figure>
-      <p>Nombre: ${pokemon[i].name}</p>
-      <p>Tipo: ${pokemon[i].type}</p>
+      <p>Nombre: ${dataPok[i].name}</p>
+      <p>Tipo: ${dataPok[i].type}</p>
       
     </div>
-=======
-//  console.log(pokemon)
-  for (let i = 0; i < pokemon.length; i++) {
-    result.innerHTML += `
-    <div>
-      <p>Nombre: ${pokemon[i].name}</p>
-      <img src="${pokemon[i].img}" alt="perfil">
-      </div>
->>>>>>> 991037d373872ed59783df8953db7a5cc3050981
   `;
   }
-}
-addPokemon(arrValues)
+});
 
+const orderPokemon = document.getElementById("order-Pokemon");
+orderPokemon.addEventListener("click",() =>{
+  
+
+})
 
 //addPokemon(order(POKEMON.pokemon, []));

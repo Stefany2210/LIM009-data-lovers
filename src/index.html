@@ -28,17 +28,44 @@
   <article id="first">
     <h1> BIENVENIDX </h1>
     <p> Escoja una categoría </p>
-    <button> Listado de Pokemons </button>
-    <button> Nombres por orden alfabético </button>
-    <button> Tipos de Pokemon </button>
+  <form>
+
+      <button id="list-Pokemon" name="Listado">
+          <option>Pokemons</option>
+          <option>Listado de Pokemons</option>
+      </select> 
+    <select id="order-Pokemon" name="Order">  
+          <option selected disabled>Pokemons en orden alfabetico</option>
+          <option>Ascendente (A-Z)</option>
+          <option>Descendente (Z-A)</option>
+    </select>
+    <select id="typepokemon" name="Tipo"> 
+          <option>Tipos de Pokemons</option>  
+          <option>Agua</option>
+          <option>Bicho</option>
+          <option>Dragón</option>
+          <option>Eléctrico</option>
+          <option>Fantasma</option>
+          <option>Fuego</option>
+          <option>Hielo</option>
+          <option>Lucha</option>
+          <option>Normal</option>
+          <option>Planta</option>
+          <option>Psiquico</option>
+          <option>Roca</option>
+          <option>Tierra</option>
+          <option>Veneno</option>
+          <option>Volador</option>
+
+    </select>
 
     <!--   <div>
         <img src=" " alt="General">
     </div>
-    <button> 3 </button>  
+    <button> 3 </button>  -->
   <div id="result" class="one">
-    </div>   -->
-
+  </div>   
+  </form> 
   </article>
 
   <script src="./data/pokemon/pokemon.js"></script>
