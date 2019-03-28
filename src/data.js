@@ -1,52 +1,40 @@
-// const dataPok = POKEMON.pokemon
-// const arrValues = Object.values(dataPok)
-//  for(let x = 0; x < arrValues.length; x++) {
-// console.log(arrValues[x].type);
-// if(arrValues[x].type[0]==='Fire'){
-//   console.log(arrValues[x]);
-// }
-// }
+ /*const dataPok = POKEMON.pokemon
+ const arrValues = Object.values(dataPok)
+  for(let x = 0; x < arrValues.length; x++) {
+ console.log(arrValues[x].type);
+ if(arrValues[x].type[0]==='Fire'){
+  console.log(arrValues[x]);
+ }
+ }*/
 
-// const order = (dataPok, alphabet) => {
-//   console.log(dataPok)
-//   for (let x = 0; x < dataPok.length; x++) {
-//     alphabet.push(dataPok[x].name);
-//   }
-//   const result = alphabet.sort();
-//   return result;
-// }
-
-// const filter = () => {
-
-//   for (let x = 0; x < dataPok.length; x++) {
-//     alphabet.push(dataPok[x].name);
-//   }
-// }
-// //console.log()
-// window.order = order;
-
-const order = (dataPok, alphabet) => {
- 
+/*const order = (dataPok, alphabet) => {
+  //console.log(dataPok)
   for (let x = 0; x < dataPok.length; x++) {
     alphabet.push(dataPok[x].name);
   }
   console.log(alphabet)
   const result = alphabet.sort();
+  //console.log(dataPok[x].name);
   return result;
+}*/
+  
+  
+/*const filter = () => {
+  for (let x = 0; x < dataPok.length; x++) {
+    alphabet.push(dataPok[x].type);
+  } 
 }
+console.log(dataPok[x]);*/
 
-const general = () => {
-  const orderData = order(dataPOk, []);
-  for (let x = 0; x < orderData.length; x++){
-    for (let a = 0; a < dataPok.length; a++) {
-      if (orderData[x] === dataPok[a].name) {
-      //  console.log(dataPok[a]);
-        const result1 = dataPok.sort();
+//window.order = order;*/
 
-        return result1;
-      }
-  }
-  }
-}
-//console.log()
-window.order = order;
+
+/*const orderData = (dataPok,sortBY) => {
+  console.log(dataPok);
+  
+  if (sortBY === "type" && )
+}*/
+
+
+
+

@@ -1,31 +1,26 @@
-// const dataPok = POKEMON.pokemon
-// const arrValues = Object.values(dataPok)
-// const result = document.getElementById('result');
-// const addPokemon = (pokemon) => {
-//   for (let i = 0; i < pokemon.length; i++) {
-//     result.innerHTML += `
-//     <div>
-//       <p>Nombre: ${pokemon[i].name}</p>
-//       <p>Tipo: ${pokemon[i].type}</p>
-//       <figure>
-//         <img src="${pokemon[i].img}" alt="perfil">
-//       </figure>
-//     </div>
-//   `;
-//   }
-// }
-// addPokemon(arrValues);
-
+//para mostrar el listado de Pokemons
+const dataPok = POKEMON.pokemon
 const result = document.getElementById('result');
-const addPokemon = (pokemon) => {
-//  console.log(pokemon)
-  for (let i = 0; i < pokemon.length; i++) {
+const listPokemon = document.getElementById("list-Pokemon");
+listPokemon.addEventListener("click",()=>{
+  for (let i = 0; i <dataPok.length; i++) {
     result.innerHTML += `
-    <div>
-      <p>Nombre: ${pokemon[i].name}</p>
-      <img src="${pokemon[i].img}" alt="perfil">
-      </div>
+    <div class="pokemon">
+      <figure>
+      <img src="${dataPok[i].img}" alt="perfil">
+      </figure>
+      <p>Nombre: ${dataPok[i].name}</p>
+      <p>Tipo: ${dataPok[i].type}</p>
+      
+    </div>
   `;
   }
-}
-addPokemon(order(POKEMON.pokemon, []));
+});
+
+const orderPokemon = document.getElementById("order-Pokemon");
+orderPokemon.addEventListener("click",() =>{
+  
+
+})
+
+//addPokemon(order(POKEMON.pokemon, []));
