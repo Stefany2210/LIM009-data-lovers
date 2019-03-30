@@ -1,52 +1,29 @@
-// const dataPok = POKEMON.pokemon
-// const arrValues = Object.values(dataPok)
-//  for(let x = 0; x < arrValues.length; x++) {
-// console.log(arrValues[x].type);
-// if(arrValues[x].type[0]==='Fire'){
-//   console.log(arrValues[x]);
-// }
-// }
+// Función para ordenar de la A-Z y de la Z-A
 
-// const order = (dataPok, alphabet) => {
-//   console.log(dataPok)
-//   for (let x = 0; x < dataPok.length; x++) {
-//     alphabet.push(dataPok[x].name);
-//   }
-//   const result = alphabet.sort();
-//   return result;
-// }
+function orderData (a, b) {
+      a = a.name;
+      b = b.name;
+    if (a > b) {
+      return 1;
+    } else if (a < b) {
+      return -1;
+    } else if (a === b) {
+      return 0;
+    }
+  };
+  window.orderData = orderData;
 
-// const filter = () => {
+// Función filtrar por tipo 
 
-//   for (let x = 0; x < dataPok.length; x++) {
-//     alphabet.push(dataPok[x].name);
-//   }
-// }
-// //console.log()
-// window.order = order;
-
-const order = (dataPok, alphabet) => {
- 
-  for (let x = 0; x < dataPok.length; x++) {
-    alphabet.push(dataPok[x].name);
-  }
-  console.log(alphabet)
-  const result = alphabet.sort();
-  return result;
-}
-
-const general = () => {
-  const orderData = order(dataPOk, []);
-  for (let x = 0; x < orderData.length; x++){
-    for (let a = 0; a < dataPok.length; a++) {
-      if (orderData[x] === dataPok[a].name) {
-      //  console.log(dataPok[a]);
-        const result1 = dataPok.sort();
-
-        return result1;
+const filterData = (dataPoke, typePokemon) => {
+  const newArrType = [];
+  for (let i = 0; i < dataPoke.length; i++) {
+    for (let x = 0; x < dataPoke[i].type.length; x++) {
+      if (dataPoke[i].type[x] === typePokemon) {
+        newArrType.push(dataPoke[i])
       }
+    }
   }
-  }
-}
-//console.log()
-window.order = order;
+  return newArrType;
+};
+window.filterData = filterData;
