@@ -6,13 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> POKEMON </title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 
 <body>
   <header>
     <div class="contenedor">
-      <h1><img class="logoname" src="logo.png" alt="loguito"></h1>
+      <!--<h1><img class="logoname" src="logo.png" alt="loguito"></h1>-->
       <input type="checkbox" id="menu-bar">
       <label class="icon-menu" for="menu-bar"></label>
       <nav class="menu">
@@ -28,44 +27,41 @@
   <article id="first">
     <h1> BIENVENIDX </h1>
     <p> Escoja una categoría </p>
-  <form>
-
-      <button id="list-Pokemon" name="Listado">
-          <option>Pokemons</option>
-          <option>Listado de Pokemons</option>
-      </select> 
+  <div>
+    <button id="list-Pokemon" name="Listado">POKEDEX</button>
     <select id="order-Pokemon" name="Order">  
           <option selected disabled>Pokemons en orden alfabetico</option>
-          <option>Ascendente (A-Z)</option>
-          <option>Descendente (Z-A)</option>
+          <option id="az">Ascendente (A-Z)</option>
+          <option id="za">Descendente (Z-A)</option>
     </select>
     <select id="typepokemon" name="Tipo"> 
-          <option>Tipos de Pokemons</option>  
-          <option>Agua</option>
-          <option>Bicho</option>
-          <option>Dragón</option>
-          <option>Eléctrico</option>
-          <option>Fantasma</option>
-          <option>Fuego</option>
-          <option>Hielo</option>
-          <option>Lucha</option>
-          <option>Normal</option>
-          <option>Planta</option>
-          <option>Psiquico</option>
-          <option>Roca</option>
-          <option>Tierra</option>
-          <option>Veneno</option>
-          <option>Volador</option>
+          <option selected disabled>Tipos de Pokemons</option>  
+          <option value="agua">Agua</option>
+          <option value="bivho">Bicho</option>
+          <option value="dragon">Dragón</option>
+          <option value="electrico">Eléctrico</option>
+          <option value="fantasma">Fantasma</option>
+          <option value="fuego">Fuego</option>
+          <option value="hielo">Hielo</option>
+          <option value="lucha">Lucha</option>
+          <option value="normal">Normal</option>
+          <option value="planta">Planta</option>
+          <option value="psiquico">Psiquico</option>
+          <option value="roca">Roca</option>
+          <option value="tierra">Tierra</option>
+          <option value="veneno">Veneno</option>
+          <option value="volador">Volador</option>
 
     </select>
-
+  </div>
     <!--   <div>
         <img src=" " alt="General">
     </div>
     <button> 3 </button>  -->
+  
   <div id="result" class="one">
   </div>   
-  </form> 
+ 
   </article>
 
   <script src="./data/pokemon/pokemon.js"></script>
