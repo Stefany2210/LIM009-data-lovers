@@ -4,6 +4,8 @@
 
 body {
   background-image:url("https://i.ytimg.com/vi/R04u9E5INTI/maxresdefault.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 h1 {
@@ -58,6 +60,7 @@ p {
     
 .container {
   padding: 2px 16px;
+  
 }
 
 .boxAllPokemons {
