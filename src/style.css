@@ -1,101 +1,68 @@
-#menu-bar{
+#second, #third {
   display: none;
 }
 
-header label{
-  float: right;
-  font-size: 28px;
-  margin: 6px 0;
-  cursor: pointer;
-}
-.menu{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background:rgba(51, 51, 51, 0.9);
-  transition: all 0.5s;
-  transform: translateX(-100%);
-}
-.menu a{
-  display: block;
-  color:#fff;
-  height: 50px;
-  text-decoration: none;
-  padding: 15px;
-  border-bottom: 1px solid rgba(255,255,255,0.5);
-
-}
-.menu a:hover{
-  background: rgba(255,255,255,0.3);
-}
-menu-bar:checked ~ .menu{
-  transform: translateX(0%);
+body {
+  background-image:url("https://i.ytimg.com/vi/R04u9E5INTI/maxresdefault.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
-@media (min-width:1024px){
-  .menu{
-      position: static;
-      width: auto;
-      height: auto;
-      transform: translateX(0%);
-      float: right;
-      display: flex;
-  }
-  .menu a {
-      border :none;
-  }
-  header label {
-      display: none;
-
-  }
+h1 {
+  color: white;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif ;
+  font-size: 50px;
+  text-align: center;
+  text-shadow:-1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
 }
 
 p { 
   text-align: center;
-  color: black;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif ;
-  font-size: 30px;
-}
-
-h1 {
-  color: black;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif ;
-  font-size: 25px;
-  text-align: center;
-}
-
-.first {
-  text-align: center;
-}
-
-@import "compass/css3";
-.flex-contenedor {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-.flex-item {
-  background: tomato;
-  padding: 5px;
-  width: 200px;
-  height: 150px;
-  margin-top: 10px;
-  
-  line-height: 150px;
   color: white;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif ;
+  font-size: 40px;
+  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+}
+
+.box1 {
+  font-size: 20px;
+  color: black;
+  background-color:  rgb(255, 255, 255);
+  text-align: center; 
+  width: 300px; 
+  margin: 10px; 
+  padding: 7px; 
+  border: 0; 
+  border-radius: 30px; 
+  }
+
+.box2 {
+  font-size: 20px;
+  color: black;
+  background-color:  rgb(255, 255, 255);
+  text-align: center; 
+  width: 350px; 
+  margin: 10px; 
+  padding: 7px; 
+  border: 0; 
+  border-radius: 30px; 
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+    
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+    
+.container {
+  padding: 2px 16px;
+  
+}
+
+.boxAllPokemons {
+  display: flex;
 }
