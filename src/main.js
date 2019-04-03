@@ -2,6 +2,9 @@ const toSecondPage = document.getElementById("secondPage");
 const secondView = document.getElementById("second");
 const thirdView = document.getElementById("third");
 const toThirdPage = document.getElementById("thirdPage");
+const toFourthPage = document.getElementById("fourthPage");
+const fourthView = document.getElementById("fourth");
+
 
 toSecondPage.addEventListener('click', functionA);
 function functionA() {
@@ -15,11 +18,20 @@ function functionB() {
         document.getElementById("first").style.display="none";
         document.getElementById("third").style.display="block";
         boxTypePokemons.innerHTML = "";
-    }
+}
+
+
+toFourthPage.addEventListener('click', functionC);
+function functionC() {
+    document.getElementById("first").style.display = "none";
+    document.getElementById("fourth").style.display = "block";
+    calculatePokemon.innerHTML = "";
+}
 
 const listPokemon = document.getElementById("list-Pokemon");
 const dataPoke = POKEMON.pokemon
 const showAllPokemons = document.getElementById("boxAllPokemon");
+
 
 //Muestra a todos los pokemons
 
@@ -55,7 +67,8 @@ const boxOrderPokemons = (dataPoke) => {
        <figure>
        <img src= "${dataPoke[i].img}">
        </figure>
-       <div class="container"> 
+       <div class="container">
+       <p> Número: ${dataPoke[i].num}</p> 
        <p>Nombre: ${dataPoke[i].name}</p>
        </div>
        </div>
@@ -105,3 +118,15 @@ typePokemons.addEventListener("change", () => {
     boxTypePokemons.innerHTML = '';
     boxFilterPokemons(filterData(dataPoke,typePokemon.value));
   });
+
+  // muestra el calculo matemático
+
+  const calculatePoke = document.getElementById("CalculatePokemonGo");
+  const resulteCalculate = document.getElementById("calculatePokemon");
+
+  calculatePoke.addEventListener("click"; (calculatePokemon) => {
+      calculatePokemon.innerHTML = '';
+      resulteCalculate(calculate(dataPoke,user))
+  })
+
+

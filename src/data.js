@@ -27,3 +27,18 @@ const filterData = (dataPoke, typePokemon) => {
   return newArrType;
 };
 window.filterData = filterData;
+
+// Función calculo matemático
+
+
+const calculate = (dataPoke, user) => {
+  return dataPoke.length - user ; 
+}
+//console.log(calculate(POKEMON.pokemon,10));
+
+
+
+
+
+
+
