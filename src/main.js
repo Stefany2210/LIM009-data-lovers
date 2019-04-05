@@ -10,7 +10,7 @@ toSecondPage.addEventListener('click', functionA);
 function functionA() {
     document.getElementById("first").style.display = "none";
     document.getElementById("second").style.display = "block";
-    boxPokemons.innerHTML = "";
+    //boxPokemons.innerHTML = "";
 }
 
 toThirdPage.addEventListener('click', functionB);
@@ -23,9 +23,9 @@ function functionB() {
 
 toFourthPage.addEventListener('click', functionC);
 function functionC() {
-    document.getElementById("first").style.display = "none";
-    document.getElementById("fourth").style.display = "block";
-    calculatePokemon.innerHTML = "";
+        document.getElementById("first").style.display="none";
+        document.getElementById("fourth").style.display="block";
+        calcular.innerHTML = "";
 }
 
 const listPokemon = document.getElementById("list-Pokemon");
@@ -42,12 +42,12 @@ listPokemon.addEventListener('click', ()=> {
             <figure>
              <img src="${dataPoke[i].img}" alt="perfil">
             </figure>
-        <div class="container"> 
-         <p>Nombre: ${dataPoke[i].name}</p>
-         <p>Tipo: ${dataPoke[i].type}</p>
-         <p>Egg: ${dataPoke[i].egg}</p>
-         <p>Candy: ${dataPoke[i].candy_count}</p>
-         </div>
+            <div class="container"> 
+            <p>Nombre: ${dataPoke[i].name}</p>
+            <p>Tipo: ${dataPoke[i].type}</p>
+            <p>Egg: ${dataPoke[i].egg}</p>
+            <p>Candy: ${dataPoke[i].candy_count}</p>
+            </div>
         </div>
         `;
     }
@@ -122,11 +122,11 @@ typePokemons.addEventListener("change", () => {
   // muestra el calculo matemático
 
   const calculatePoke = document.getElementById("CalculatePokemonGo");
-  const resulteCalculate = document.getElementById("calculatePokemon");
+  const resulteCalculate = document.getElementById("calculatePk");
 
-  calculatePoke.addEventListener("click"; (calculatePokemon) => {
+  calculatePoke.addEventListener("click", (calculatePokemon) => {
       calculatePokemon.innerHTML = '';
       resulteCalculate(calculate(dataPoke,user))
-  })
+  });
 
 

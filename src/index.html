@@ -4,20 +4,24 @@
 <head>
   <meta charset="utf-8">
 
-  <title> POKEMON </title>
+  <title> POKEMONNET </title>
   <link rel="stylesheet" href="style.css" />
+  
 </head>
 
 <body>
+  <header class="headpoke">
+    <figure class="logo"><img class="logopoke" src="Img/Logo Pagina.png" alt="Logo-pokemon"</figure> 
+  </header>
   <div id="root"></div>
   <!-- Primera Página -->
   <article id="first">
     <h1> BIENVENIDX </h1>
     <p> Seleccione una categoría </p>
     <button id="list-Pokemon" class="box1"> Listado de Pokemons </button>
-    <button id="secondPage" class="box2"> Pokemons por orden alfabético </button>
+    <button id="secondPage" class="box1"> Pokemons por orden alfabético </button>
     <button id="thirdPage" class="box1"> Tipos de Pokemons </button>
-    <button id="fouthPage" class="box2"> Poke capturas </button>
+    <button id="fourthPage" class="box1"> Poke capturas </button>
     
     <div id="boxAllPokemon">
 
@@ -67,15 +71,18 @@
   <!-- Cuarta Página -->
 
   <article id="fourth">
+    <div id="counting"
     <p> ¿Quieres saber cuantos pokemones te falta capturar? </p>
-    <input type="text" name="calculate" id="CalculatePokemonGo" >
-    <button id="calculatePk" class="box2" value="calcular"> Calcular </button>
-    <div id="calculatePokemon">
-
-
+    <input type="text" id="CalculatePokemonGo" placeholder="Ingrese numero de Pokemons capturados" >
+    <button  type="button" class="box1" id="calcular"> Calcular </button>
+    <h1 id="num-result"></h1>
+    
     </div>
   </article>
-
+  <section class="content">
+      <div id="pokemons-view"></div>
+  </section>
+  <footer class="footer"> © Copyright 2019 by Wen C. & Stefany B. <br> All rights reversed.</footer>
   <script src="./data/pokemon/pokemon.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
