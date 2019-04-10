@@ -4,42 +4,27 @@
 
 * [Desccripción](#descripción)
 * [POKEMONNET definición de usuario](#POKEMONNET-definición-de-usuario)
-* [Consideraciones generales](#consideraciones-generales)
-* [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-* [Parte obligatoria](#parte-obligatoria)
-* [Parte opcional](#parte-opcional-hacker-edition)
-* [Consideraciones técnicas](#consideraciones-técnicas)
-* [Primeros pasos](#primeros-pasos)
-* [Contenido de referencia](#contenido-de-referencia)
-* [Checklist](#checklist)
+* [Proceso del diseño](#proceso-del-diseño)
+* [Investigación y usuarios](#investigación-y-usuarios)
+* [Sintesis e Ideación](#sintesis-e-ideación)
 
 ***
 
 ## Descripción:
 
-POKEMONNET es una página web que esta diseñada para que sus usuarios conozcan sobre que es pokemon y obtengan informacion de cada pokemon. En esta web los usuarios podran visualizar a 151 pokemons, ordenarlos alfabéticamente (ascendente y descendente),flitrarlos por tipo (15 clasificaciones) y tambien la opción de calcular cuantos pokemons le falta capturar al usuario.
+POKEMONNET es una página web que esta diseñada para que sus usuarios conozcan sobre que es pokemon y obtengan informacion de cada uno de ellos. En esta web los usuarios podran visualizar a los 151 pokemons, ordenarlos alfabéticamente (ascendente y descendente),filtrarlos por tipo (15 clasificaciones) y tambien encontraras la opción de calcular cuantos pokemons le falta capturar al usuario.
 
-![Con titulo] (img/Logo Pagina.png "Logo POKENNET")
 
 ## POKEMONNET definición de usuario :
 
-Principiantes, que quieran tener informacion básica sobre pokemons por eso hemos creado una pagina amigable con informacion importante para que el usuario se sienta comodo al usarlo.
+Principiantes, que quieran tener informacion básica sobre pokemons por eso hemos creado una pagina amigable con informacion importante para que el usuario se sienta comodo al usarlo. 
 
 
-Esta vez te proponemos una serie de datos de diferentes _temáticas_ para que
-explores y decidas con qué temática te interesa trabajar. Hemos elegido
-específicamente estos sets de datos porque creemos que se adecúan bien a esta
-etapa de tu aprendizaje.
 
-Una vez que definas tu área de interés, buscar entender quién es tu usuario
-y qué necesita saber o ver exactamente; luego podrás construir la interfaz que
-le ayude a interactuar y entender mejor esos datos.
+## Proceso del diseño:
 
-Estos son datos que te proponemos:
 
-* [Indicadores de desarrollo del Banco Mundial](src/data/worldbank/worldbank.json)
-  de algunos países (Brasil, Chile, México y Perú). Estos datos incluyen
-  indicadores demográficos, económicos y comerciales.
+
 * [Pokémon](src/data/pokemon/pokemon.json):
   En este set encontrarás una lista con los 151 Pokémon de la región de Kanto,
   junto con sus respectivas estadísticas usadas en el juego [Pokémon GO](pokemongolive.com).
@@ -60,14 +45,14 @@ interfaz. La identidad gráfica, también conocida como guía de estilos en
 diseño, de cada set la podrás encontrar en el siguiente
 [link](https://drive.google.com/open?id=1eeWFqrWpy-OYOH4EHDckFGunyrm9iNeE).
 
-## Consideraciones generales
+## Investigación y usuarios
 
 * Este proyecto se debe resolver en duplas.
 * El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
   interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
 * Tiempo para completarlo: Toma como referencia 3 semanas.
 
-## Objetivos de aprendizaje
+## Sintesis e Ideación 
 
 El objetivo principal de este proyecto es que aprendas a diseñar y construir una
 interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el
