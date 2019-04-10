@@ -1,5 +1,5 @@
 const toSecondPage = document.getElementById("secondPage");
-const secondView = document.getElementById("second");
+// const secondView = document.getElementById("second");
 const thirdView = document.getElementById("third");
 const toThirdPage = document.getElementById("thirdPage");
 const toFourthPage = document.getElementById("fourthPage");
@@ -15,17 +15,17 @@ function functionA() {
 
 toThirdPage.addEventListener('click', functionB);
 function functionB() {
-        document.getElementById("first").style.display="none";
-        document.getElementById("third").style.display="block";
-        boxTypePokemons.innerHTML = "";
+    document.getElementById("first").style.display = "none";
+    document.getElementById("third").style.display = "block";
+    boxTypePokemons.innerHTML = "";
 }
 
 
 toFourthPage.addEventListener('click', functionC);
 function functionC() {
-        document.getElementById("first").style.display="none";
-        document.getElementById("fourth").style.display="block";
-        calcular.innerHTML = "";
+    document.getElementById("first").style.display = "none";
+    document.getElementById("fourth").style.display = "block";
+    calcular.innerHTML = "";
 }
 
 const listPokemon = document.getElementById("list-Pokemon");
@@ -35,7 +35,7 @@ const showAllPokemons = document.getElementById("boxAllPokemon");
 
 //Muestra a todos los pokemons
 
-listPokemon.addEventListener('click', ()=> {
+listPokemon.addEventListener('click', () => {
     for (let i = 0; i < dataPoke.length; i++) {
         boxAllPokemon.innerHTML += `
         <div class="card">
@@ -116,17 +116,17 @@ const showTypePokemons = document.getElementById("boxTypePokemons");
 
 typePokemons.addEventListener("change", () => {
     boxTypePokemons.innerHTML = '';
-    boxFilterPokemons(filterData(dataPoke,typePokemon.value));
-  });
+    boxFilterPokemons(filterData(dataPoke, typePokemon.value));
+});
 
-  // muestra el calculo matemático
+// muestra el calculo matemático
 
-  const calculatePoke = document.getElementById("CalculatePokemonGo");
-  const resulteCalculate = document.getElementById("calculatePk");
+const calculatePoke = document.getElementById("CalculatePokemonGo");
+const resulteCalculate = document.getElementById("calculatePk");
 
-  calculatePoke.addEventListener("click", (calculatePokemon) => {
-      calculatePokemon.innerHTML = '';
-      resulteCalculate(calculate(dataPoke,user))
-  });
+calculatePoke.addEventListener("click", (calculatePokemon) => {
+    calculatePokemon.innerHTML = '';
+    resulteCalculate(calculate(dataPoke, user))
+});
 
 

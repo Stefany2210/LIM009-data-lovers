@@ -5,7 +5,7 @@ require('./data.spec.js');
 
 
 describe('example', () => {
-  
+
   it('debería ser una función', () => {
     assert.equal(typeof example, 'function');
   });
