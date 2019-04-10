@@ -19,7 +19,7 @@
 
 POKEMONNET es una página web que esta diseñada para que sus usuarios conozcan sobre que es pokemon y obtengan informacion de cada pokemon. En esta web los usuarios podran visualizar a 151 pokemons, ordenarlos alfabéticamente (ascendente y descendente),flitrarlos por tipo (15 clasificaciones) y tambien la opción de calcular cuantos pokemons le falta capturar al usuario.
 
-![Logo POKEMONNET] (img/Logo Pagina.png "Logo POKENNET")
+![Con titulo] (img/Logo Pagina.png "Logo POKENNET")
 
 ## POKEMONNET definición de usuario :
 
