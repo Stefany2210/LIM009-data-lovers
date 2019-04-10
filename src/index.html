@@ -1,71 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta charset="utf-8">
-
-  <title> POKEMON </title>
-  <link rel="stylesheet" href="style.css" />
+  <title> PALACE OF POKEMONS </title>
+  <link rel="shortcut icon" href="img/logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/fontello.css">
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
-  <div id="root"></div>
+
   <!-- Primera Página -->
-  <article id="first">
-    <h1> BIENVENIDX </h1>
-    <p> Seleccione una categoría </p>
-    <button id="list-Pokemon" class="box1"> Listado de Pokemons </button>
-    <button id="secondPage" class="box2"> Pokemons por orden alfabético </button>
-    <button id="thirdPage" class="box1"> Tipos de Pokemons </button>
-    
-    <div id="boxAllPokemon">
 
+  <header>
+    <div class="contenedor">
+      <h1 class="icon-color-adjust"> PALACE  OF  POKEMONS </h1>
+      <input type="checkbox" id="menu-bar">
+      <label for="menu-bar" class="icon-menu"> </label>
+      <nav class="menu">
+        <a href="index.html" class="icon-home"> Inicio </a>
+        <a href="https://pokemaster.es/guias/guia-pokemon-go/" target="_blank" class="icon-videocam"> Tutoriales </a>
+        <a href="https://andro4all.com/tag/pokemon-go" target="_blank" class="icon-newspaper"> Noticias </a>
+        <a href="https://www.3djuegos.com/n3/4291/0/pokemon-go/" target="_blank" class="icon-gamepad"> Juegos Online
+        </a>
+      </nav>
     </div>
+  </header>
 
-  </article>
+  <main>
+    <section id="banner">
+      <img src="img/bannerimg.jpg">
+      <div class="contenedor">
+        <h2> SI QUIERES SER UN MAESTRO EN POKEMON GO </h2>
+        <p> Aquí podrás encontrar toda la información </p>
+      </div>
+    </section>
 
-  <!-- Segunda Página -->
+    <section id="first">
+      <h1> BIENVENIDX </h1>
+      <p> Seleccione una categoría </p>
+      <button id="list-Pokemon" class="box1"> Listado de Pokemons </button>
+      <button id="secondPage" class="box2"> Pokemons por orden alfabético </button>
+      <button id="thirdPage" class="box1"> Tipos de Pokemons </button>
 
-  <article id="second">
+      <div id="boxAllPokemon">
+
+      </div>
+
+    </section>
+
+    <!-- Segunda Página -->
+
+    <section id="second">
       <p> Escoja como quisiera ver el ordenamiento </p>
-    <button id="AZ" class="box1" value="Asc"> Ascendente (A-Z) </button>
-    <button id="ZA" class="box1" value="Desc"> Descendente (Z-A) </button>
+      <button id="AZ" class="box1" value="Asc"> Ascendente (A-Z) </button>
+      <button id="ZA" class="box1" value="Desc"> Descendente (Z-A) </button>
 
-    <div id="boxPokemons">
+      <div id="boxPokemons">
 
-    </div>
-  </article>
+      </div>
+    </section>
 
-  <!-- Tercera Página -->
+    <!-- Tercera Página -->
 
-  <article id="third">
+    <section id="third">
       <p> Escoge una opción </p>
-    <select id="typePokemon" name="ListType" class="box1">
-      <option selected disabled value="types-Pokemon"> Tipos de Pokemons </option>
-      <option value="Bug"> Bug </option>
-      <option value="Dragon"> Dragon </option>
-      <option value="Electric"> Electric </option>  
-      <option value="Fire"> Fire </option>
-      <option value="Fighting"> Fighting </option>
-      <option value="Flying"> Flying </option>
-      <option value="Ghost"> Ghost </option>
-      <option value="Grass"> Grass </option>
-      <option value="Ground"> Ground </option>
-      <option value="Ice"> Ice </option>
-      <option value="Normal"> Normal </option>
-      <option value="Poison"> Poison </option> 
-      <option value="Psychic"> Psychic </option>
-      <option value="Rock"> Rock </option>
-      <option value="Water"> Water </option>
-    </select>
-    <div id="boxTypePokemons">
+      <select id="typePokemon" name="ListType" class="box1">
+        <option selected disabled value="types-Pokemon"> Tipos de Pokemons </option>
+        <option value="Bug"> Bug </option>
+        <option value="Dragon"> Dragon </option>
+        <option value="Electric"> Electric </option>
+        <option value="Fire"> Fire </option>
+        <option value="Fighting"> Fighting </option>
+        <option value="Flying"> Flying </option>
+        <option value="Ghost"> Ghost </option>
+        <option value="Grass"> Grass </option>
+        <option value="Ground"> Ground </option>
+        <option value="Ice"> Ice </option>
+        <option value="Normal"> Normal </option>
+        <option value="Poison"> Poison </option>
+        <option value="Psychic"> Psychic </option>
+        <option value="Rock"> Rock </option>
+        <option value="Water"> Water </option>
+      </select>
+      <div id="boxTypePokemons">
 
-    </div>
-  </article>
+      </div>
+    </section>
 
-  <script src="./data/pokemon/pokemon.js"></script>
-  <script src="data.js"></script>
-  <script src="main.js"></script>
+    <script src="./data/pokemon/pokemon.js"></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
 </body>
+</main>
 
 </html>
