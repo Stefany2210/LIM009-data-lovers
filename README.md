@@ -2,7 +2,7 @@
 
 ## Índice
 
-* [Desccripción](#descripción)
+* [Desccripción del Producto](#descripción-del-producto)
 * [POKEMONNET definición de usuario](#POKEMONNET-definición-de-usuario)
 * [Proceso del diseño](#proceso-del-diseño)
 * [Investigación y usuarios](#investigación-y-usuarios)
@@ -10,7 +10,7 @@
 
 ***
 
-## Descripción:
+## Descripción del Producto:
 
 POKEMONNET es una página web que esta diseñada para que sus usuarios conozcan sobre que es pokemon y obtengan informacion de cada uno de ellos. En esta web los usuarios podran visualizar a los 151 pokemons, ordenarlos alfabéticamente (ascendente y descendente),filtrarlos por tipo (15 clasificaciones) y tambien encontraras la opción de calcular cuantos pokemons le falta capturar al usuario.
 
@@ -23,34 +23,30 @@ Principiantes, que quieran tener informacion básica sobre pokemons por eso hemo
 
 ## Proceso del diseño:
 
+### Historia de Usuario
+
+### Encuestas y Resultados
+
+
+
 
 
 * [Pokémon](src/data/pokemon/pokemon.json):
   En este set encontrarás una lista con los 151 Pokémon de la región de Kanto,
   junto con sus respectivas estadísticas usadas en el juego [Pokémon GO](pokemongolive.com).
-* [Steam noticias](src/data/steam/steam.json):
-  Lista noticias relacionadas a los videojuegos presentes en la
-  plataforma de [Steam](https://store.steampowered.com/).
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este set de datos muestra la lista de jugadores en una liga del
-  juego League of Legends (LoL), puedes revisar la documentación de su API en
-  este [link](https://developer.riotgames.com/api-methods/).
-* [Personas heridas por medio de transporte en EEUU](src/data/injuries/injuries.json).
-  Este set nos muestra el número de personas heridas en accidentes de
-  transporte, con data anual desde 1960 y categorizada por tipo de transporte
-  (aire, barco, automóvil, moto, bicicleta, ...).
 
-Cada set de datos tiene una identidad gráfica que deberás utilizar en la
-interfaz. La identidad gráfica, también conocida como guía de estilos en
-diseño, de cada set la podrás encontrar en el siguiente
 [link](https://drive.google.com/open?id=1eeWFqrWpy-OYOH4EHDckFGunyrm9iNeE).
 
 ## Investigación y usuarios
 
-* Este proyecto se debe resolver en duplas.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando [GitHub Pages](https://pages.github.com/).
-* Tiempo para completarlo: Toma como referencia 3 semanas.
+### Prototipo de baja calidad
+
+### Prototipo de alta calidad
+
+### Testeos de Usabilidad
+
+### Pruebas Unitarias
+
 
 ## Sintesis e Ideación 
 
@@ -58,7 +54,6 @@ El objetivo principal de este proyecto es que aprendas a diseñar y construir un
 interfaz web donde se pueda visualizar y manipular data, entendiendo lo que el
 usuario necesita.
 
-Dicho en palabras sencillas, aprenderás a:
 
 * Aplicar y profundizar todo lo que aprendiste en el proyecto anterior.
 * Pensar en las **necesidades de los usuarios** para crear historias de usuario.
@@ -288,20 +283,6 @@ e independientes del DOM. Estas funciones serán después usadas desde el archiv
 `src/main.js`, al cargar la página, y cada vez que el usuario interactúe (click,
 filtrado, ordenado, ...).
 
-### `src/data`
-
-En esta carpeta están los datos de las diferentes fuentes. Encontrarás una
-carpeta por cada fuente, y dentro de cada carpeta dos archivos: uno con la
-extensión `.js` y otro `.json`. Ambos archivos contienen la misma data; la
-diferencia es que el `.js` lo usaremos a través de una etiqueta `<script>`,
-mientras que el `.json` está ahí para opcionalmente cargar la data de forma
-asíncrona con [`fetch()`](https://developer.mozilla.org/es/docs/Web/API/Fetch_API)
-(ver sección de [_Parte Opcional_](#parte-opcional-hacker-edition)).
-
-### `test/data.spec.js`
-
-Tendrás también que completar las pruebas unitarias de las funciones
-implementadas en el archivo `data.js`.
 
 ## Evaluación
 
