@@ -39,7 +39,7 @@ listPokemon.addEventListener('click', ()=> {
     for (let i = 0; i < dataPoke.length; i++) {
         boxAllPokemon.innerHTML += `
         <div class="card">
-            <figure>
+            <f  igure>
              <img src="${dataPoke[i].img}" alt="perfil">
             </figure>
             <div class="container"> 

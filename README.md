@@ -1,9 +1,9 @@
-# Data Lovers
+# POKEMONNET
 
 ## Índice
 
-* [Preámbulo](#preámbulo)
-* [Descripción](#resumen-del-proyecto)
+* [Desccripción](#descripción)
+* [POKEMONNET definición de usuario](#POKEMONNET-definición-de-usuario)
 * [Consideraciones generales](#consideraciones-generales)
 * [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
 * [Parte obligatoria](#parte-obligatoria)
@@ -15,37 +15,16 @@
 
 ***
 
-## Preámbulo
+## Descripción:
 
-Según un [estudio de IBM](https://www-01.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=WRL12345USEN),
-el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
-Cada día generamos 2.5 trillones de bytes de datos, una cifra sin precedentes.
+POKEMONNET es una página web que esta diseñada para que sus usuarios conozcan sobre que es pokemon y obtengan informacion de cada pokemon. En esta web los usuarios podran visualizar a 151 pokemons, ordenarlos alfabéticamente (ascendente y descendente),flitrarlos por tipo (15 clasificaciones) y tambien la opción de calcular cuantos pokemons le falta capturar al usuario.
 
-No obstante, los datos por sí mismos son de poca utilidad. Para que esas
-grandes cantidades de datos se conviertan en **información** fácil de leer para
-los usuarios, necesitamos entender y procesar estos datos. Una manera simple de
-hacerlo es creando _interfaces_ y _visualizaciones_.
+![Logo POKEMONNET] (img/Logo Pagina.png "Logo POKENNET")
 
-En la siguiente imagen, podrás ver cómo con la data que que se ve en la parte
-izquierda se puede construir una interfaz amigable y entendible por el usuario
-al lado derecho.
+## POKEMONNET definición de usuario :
 
-![json-interfaz](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
+Principiantes, que quieran tener informacion básica sobre pokemons por eso hemos creado una pagina amigable con informacion importante para que el usuario se sienta comodo al usarlo.
 
-\* Puedes ver el detalle de la data en este [link](https://gist.github.com/lalogf/dd4aa3017a9f8aa8f90dfbca382c4dc9#file-student-json)
-y la interfaz construida en este [link](https://app.talento.laboratoria.la/profile/HFOoMpOreBU2psCcjjLg5O2EWEv2).
-
-## Resumen del proyecto
-
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
-necesita.
-
-Como entregable final tendrás una página web que permita **visualizar la data,
-filtrarla, ordenarla y hacer algún cálculo agregado**. Con cálculo agregado
-nos referimos a distintos cálculos que puedes hacer con la data para mostrar
-información aún más relevante para los usuarios (promedio, el valor máximo
-o mel ínimo, etc).
 
 Esta vez te proponemos una serie de datos de diferentes _temáticas_ para que
 explores y decidas con qué temática te interesa trabajar. Hemos elegido
