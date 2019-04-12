@@ -2,19 +2,46 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-
-  <title> POKEMONNET </title>
-  <link rel="stylesheet" href="style.css" />
+  
+ <title> PALACE OF POKEMONS </title>
+ <link rel="shortcut icon" href="img/logo.png">
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="stylesheet" href="style.css" />
 
 </head>
 
 <body>
-  <header class="headpoke">
-    <figure class="logo"><img class="logopoke" src="Img/Logo Pagina.png" alt="Logo-pokemon" </figure> </header> <div
-        id="root"></div>
-      <!-- Primera Página -->
-      <article id="first">
+
+<!-- Primera Página -->  
+
+  <header>
+    <div class="contenedor">
+      <h1 class="icon-color-adjust"> PALACE  OF  POKEMONS </h1>
+      <input type="checkbox" id="menu-bar">
+      <label for="menu-bar" class="icon-menu"> </label>
+      <nav class="menu">
+        <a href="index.html" class="icon-home"> Inicio </a>
+        <a href="https://pokemaster.es/guias/guia-pokemon-go/" target="_blank" class="icon-videocam"> Tutoriales </a>
+        <a href="https://andro4all.com/tag/pokemon-go" target="_blank" class="icon-newspaper"> Noticias </a>
+        <a href="https://www.3djuegos.com/n3/4291/0/pokemon-go/" target="_blank" class="icon-gamepad"> Juegos Online
+    <!-- <figure class="logo"><img class="logopoke" src="Img/Logo Pagina.png" alt="Logo-pokemon" </figure> </header> <div -->
+      </a>
+      </nav>  
+    </div>
+  </header>  
+     
+  <main>
+      <section id="banner">
+        <img src="img/bannerimg.jpg">
+        <div class="contenedor">
+          <h2> SI QUIERES SER UN MAESTRO EN POKEMON GO </h2>
+          <p> Aquí podrás encontrar toda la información </p>
+        </div>
+      </section>
+      
+      <section id="first">
         <h1> BIENVENIDX </h1>
         <p> Seleccione una categoría </p>
         <button id="list-Pokemon" class="box1"> Listado de Pokemons </button>
@@ -26,23 +53,25 @@
 
         </div>
 
-      </article>
+      </section>
 
       <!-- Segunda Página -->
 
-      <article id="second">
+      <section id="second">
         <p> Escoja como quisiera ver el ordenamiento </p>
-        <button id="AZ" class="box1" value="Asc"> Ascendente (A-Z) </button>
-        <button id="ZA" class="box1" value="Desc"> Descendente (Z-A) </button>
+        <select id= "selector">
+          <option id="AZ" class="box1" value="Asc"> Ascendente (A-Z) </option>
+          <option id="ZA" class="box1" value="Desc"> Descendente (Z-A) </option>
+        </select>
 
         <div id="boxPokemons">
 
         </div>
-      </article>
+      </section>
 
       <!-- Tercera Página -->
 
-      <article id="third">
+      <section id="third">
         <p> Escoge una opción </p>
         <select id="typePokemon" name="ListType" class="box1">
           <option selected disabled value="types-Pokemon"> Tipos de Pokemons </option>
@@ -65,18 +94,18 @@
         <div id="boxTypePokemons">
 
         </div>
-      </article>
+      </section>
 
       <!-- Cuarta Página -->
 
-      <article id="fourth">
-        <div id="counting" <p> ¿Quieres saber cuantos pokemones te falta capturar? </p>
+      <section id="fourth">
+        <div id="counting">
+          <p>¿Quieres saber cuantos pokemones te falta capturar?</p>
           <input type="text" id="CalculatePokemonGo" placeholder="Ingrese numero de Pokemons capturados">
           <button type="button" class="box1" id="calcular"> Calcular </button>
           <h1 id="num-result"></h1>
-
         </div>
-      </article>
+      </section>
       <section class="content">
         <div id="pokemons-view"></div>
       </section>
@@ -84,6 +113,7 @@
       <script src="./data/pokemon/pokemon.js"></script>
       <script src="data.js"></script>
       <script src="main.js"></script>
-</body>
 
+</main>        
+</body>
 </html>
