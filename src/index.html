@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/fontello.css">
-  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/estilos.css">  
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 
   <header>
     <div class="contenedor">
-      <h1 class="icon-color-adjust"> PALACE  OF  POKEMONS </h1>
+      <h1 class="icon-color-adjust"> PALACE OF POKEMONS </h1>
       <input type="checkbox" id="menu-bar">
       <label for="menu-bar" class="icon-menu"> </label>
       <nav class="menu">
@@ -32,41 +32,54 @@
 
   <main>
     <section id="banner">
-      <img src="img/bannerimg.jpg">
+      <img src="img/bannerimagen.jpg" alt="Banner" class="img1">
       <div class="contenedor">
-        <h2> SI QUIERES SER UN MAESTRO EN POKEMON GO </h2>
-        <p> Aquí podrás encontrar toda la información </p>
+        <h2> Toda la información que necesitas la podrás encontrar aquí </h2>
+        <br> </br>
+        <p> List@ para esta gran aventura? </p>
       </div>
     </section>
 
-    <section id="first">
-      <h1> BIENVENIDX </h1>
-      <p> Seleccione una categoría </p>
-      <button id="list-Pokemon" class="box1"> Listado de Pokemons </button>
-      <button id="secondPage" class="box2"> Pokemons por orden alfabético </button>
-      <button id="thirdPage" class="box1"> Tipos de Pokemons </button>
+    <section id="bienvenidos">
+      <h3> BIENVENIDX </h3>
+      <br></br>
+      <p> Pokémon GO es un videojuego que consiste en buscar, capturar, y luchar con los personajes de la saga Pokémon. Para ello en la siguiente sección encontrar información que te ayudará a ser todo un expertx. </p>
+    </section>
 
-      <div id="boxAllPokemon">
+    <section id="sectionspok">
+      <div class="contenedor">
+        <article id="first">
+          <h4 class="classh"> Aquí te mostramos a cada pokemon según su evolución </h4>
+          <br></br>
+          <button id="list-Pokemon" class="classbox"> Ver Pokemons </button>
+          <br></br>
+          <h5 class="classh"> Aquí podrás ordenar a los pokemons de forma ascendente o descendente </h5>
+          <br></br>
+          <button id="secondPage" class="classbox"> Ordenar </button>
+          <br></br>
+          <h6 class="classh"> Aquí podrás ubicar a los pokemons según su tipo </h6>
+          <br></br>
+          <button id="thirdPage" class="classbox"> Elegir </button>
+          <div id="boxAllPokemon">
+          </div>
+        </article>
 
       </div>
-
     </section>
 
     <!-- Segunda Página -->
 
-    <section id="second">
+    <article id="second">
       <p> Escoja como quisiera ver el ordenamiento </p>
       <button id="AZ" class="box1" value="Asc"> Ascendente (A-Z) </button>
       <button id="ZA" class="box1" value="Desc"> Descendente (Z-A) </button>
-
       <div id="boxPokemons">
-
       </div>
-    </section>
+    </article>
 
     <!-- Tercera Página -->
 
-    <section id="third">
+    <article id="third">
       <p> Escoge una opción </p>
       <select id="typePokemon" name="ListType" class="box1">
         <option selected disabled value="types-Pokemon"> Tipos de Pokemons </option>
@@ -87,9 +100,8 @@
         <option value="Water"> Water </option>
       </select>
       <div id="boxTypePokemons">
-
       </div>
-    </section>
+    </article>
 
     <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
