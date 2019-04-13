@@ -1,17 +1,21 @@
 // Función para ordenar de la A-Z y de la Z-A
 
-function orderData(a, b) {
-  a = a.name;
-  b = b.name;
-  if (a > b) {
-    return 1;
-  } else if (a < b) {
-    return -1;
-  } else if (a === b) {
-    return 0;
+const sortData = (data, sortOrder) => {
+  const order = data.sort((ab, bc) => { 
+    if (ab.name > bc.name) {
+      return 1;
+    } else if (ab.name < bc.name) {
+      return -1;
+    }  
+  });
+  if (sortOrder === 'Asc') {
+    return order;
+  } else if (sortOrder === 'Desc') {
+    return order.reverse();
   }
-}
-window.orderData = orderData;
+};
+
+window.sortData = sortData;
 
 // Función filtrar por tipo 
 
@@ -31,6 +35,12 @@ window.filterData = filterData;
 // Función calculo matemático
 
 const calculate = (dataPoke, user) => {
-  return dataPoke.length - user ; 
-}
-//console.log(calculate(POKEMON.pokemon,10));
+  return dataPoke.length - user;
+};
+window.calculate = calculate;
+
+window.pokemon = { 
+  filterData: filterData,
+  sortData: sortData,
+  calculate: calculate
+};

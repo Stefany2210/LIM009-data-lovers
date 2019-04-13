@@ -42,8 +42,8 @@ listPokemon.addEventListener('click', () => {
 });
 
 
-const orderAZ = document.getElementById('AZ');
-const orderZA = document.getElementById('ZA');
+// const orderAZ = document.getElementById('AZ');
+// const orderZA = document.getElementById('ZA');
 const showPokemons = document.getElementById('boxPokemons');
 
 // Muestra a los pokemons por orden alfabético
@@ -64,19 +64,32 @@ const boxOrderPokemons = (dataPoke) => {
 };
 boxOrderPokemons(dataPoke);
 
-// Ordenar desde la A hacia la Z
+// Ordenar desde la A hacia la Z y visceversa
 
-AZ.addEventListener('click', function() {
-  boxPokemons.innerHTML = '';
-  boxOrderPokemons(dataPoke.sort(orderData));
+boxOrderPokemons(dataPoke);
+const orderPokemons = document.getElementById('selector');
+orderPokemons.addEventListener('change', () => {
+  showPokemons.innerHTML = '';
+  const orderPoke = pokemon.sortData(dataPoke, orderPokemons.value);
+  console.log(orderPoke);
+  boxOrderPokemons(orderPoke);
 });
 
-// Ordenar desde la Z hacia la A
+toSecondPage.addEventListener('click', boxOrderPokemons);
 
-ZA.addEventListener('click', function() {
-  boxPokemons.innerHTML = '';
-  boxOrderPokemons(dataPoke.sort(orderData).reverse());
-});
+// // Ordenar desde la A hacia la Z
+
+// AZ.addEventListener('click', function() {
+//   boxPokemons.innerHTML = '';
+//   boxOrderPokemons(dataPoke.sort(orderData));
+// });
+
+// // Ordenar desde la Z hacia la A
+
+// ZA.addEventListener('click', function() {
+//   boxPokemons.innerHTML = '';
+//   boxOrderPokemons(dataPoke.sort(orderData).reverse());
+// });
 
 // Muestra a los pokemons por tipo
 
@@ -105,3 +118,13 @@ typePokemons.addEventListener('change', () => {
   boxTypePokemons.innerHTML = '';
   boxFilterPokemons(filterData(dataPoke, typePokemon.value));
 });
+
+// muestra el calculo matemático
+
+/* const calculatePoke = document.getElementById("CalculatePokemonGo");
+const resulteCalculate = document.getElementById("calculatePk");
+
+calculatePoke.addEventListener("click", (calculatePokemon) => {
+    calculatePokemon.innerHTML = '';
+    resulteCalculate(calculate(dataPoke, user))
+});*/
