@@ -1,11 +1,20 @@
+const dataPoke = POKEMON.pokemon;
 const toSecondPage = document.getElementById('secondPage');
-const secondView = document.getElementById('second');
-const thirdView = document.getElementById('third');
 const toThirdPage = document.getElementById('thirdPage');
+const tofourthPage = document.getElementById('fourthPage');
+const boxPokemons = document.getElementById('boxPokemons');
+const boxTypePokemons = document.getElementById(' boxTypePokemons');
+const listPokemon = document.getElementById('list-Pokemon');
+const boxAllPokemon = document.getElementById('boxAllPokemon');
+const Ascendente = document.getElementById('Ascendente');
+const Descendente = document.getElementById('Descendente');
+const typePokemons = document.getElementById('typePokemons');
+const porcentaje = document.getElementById('porcentaje');
 
 toSecondPage.addEventListener('click', functionA);
 function functionA() {
   document.getElementById('first').style.display = 'none';
+  document.getElementById('bienvenidos').style.display = 'none';
   document.getElementById('second').style.display = 'block';
   boxPokemons.innerHTML = '';
 }
@@ -13,15 +22,18 @@ function functionA() {
 toThirdPage.addEventListener('click', functionB);
 function functionB() {
   document.getElementById('first').style.display = 'none';
+  document.getElementById('bienvenidos').style.display = 'none';
   document.getElementById('third').style.display = 'block';
-  boxTypePokemons.innerHTML = '';
 }
 
-const listPokemon = document.getElementById('list-Pokemon');
-const dataPoke = POKEMON.pokemon;
-const showAllPokemons = document.getElementById('boxAllPokemon');
+tofourthPage.addEventListener('click', functionC);
+function functionC() {
+  document.getElementById('first').style.display = 'none';
+  document.getElementById('bienvenidos').style.display = 'none';
+  document.getElementById('fourth').style.display = 'block';
+}
 
-// Muestra a todos los pokemons
+// Muestra a todos los pokemons ordenados por evolución
 
 listPokemon.addEventListener('click', () => {
   for (let i = 0; i < dataPoke.length; i++) {
@@ -41,11 +53,6 @@ listPokemon.addEventListener('click', () => {
   }
 });
 
-
-// const orderAZ = document.getElementById('AZ');
-// const orderZA = document.getElementById('ZA');
-const showPokemons = document.getElementById('boxPokemons');
-
 // Muestra a los pokemons por orden alfabético
 
 const boxOrderPokemons = (dataPoke) => {
@@ -64,32 +71,19 @@ const boxOrderPokemons = (dataPoke) => {
 };
 boxOrderPokemons(dataPoke);
 
-// Ordenar desde la A hacia la Z y visceversa
+// Ordenar desde la A hacia la Z
 
-boxOrderPokemons(dataPoke);
-const orderPokemons = document.getElementById('selector');
-orderPokemons.addEventListener('change', () => {
-  showPokemons.innerHTML = '';
-  const orderPoke = pokemon.sortData(dataPoke, orderPokemons.value);
-  console.log(orderPoke);
-  boxOrderPokemons(orderPoke);
+Ascendente.addEventListener('click', function() {
+  boxPokemons.innerHTML = '';
+  boxOrderPokemons(sortData(dataPoke, 'AZ'));
 });
 
-toSecondPage.addEventListener('click', boxOrderPokemons);
+// Ordenar desde la Z hacia la A
 
-// // Ordenar desde la A hacia la Z
-
-// AZ.addEventListener('click', function() {
-//   boxPokemons.innerHTML = '';
-//   boxOrderPokemons(dataPoke.sort(orderData));
-// });
-
-// // Ordenar desde la Z hacia la A
-
-// ZA.addEventListener('click', function() {
-//   boxPokemons.innerHTML = '';
-//   boxOrderPokemons(dataPoke.sort(orderData).reverse());
-// });
+Descendente.addEventListener('click', function() {
+  boxPokemons.innerHTML = '';
+  boxOrderPokemons(sortData(dataPoke, 'ZA'));
+});
 
 // Muestra a los pokemons por tipo
 
@@ -111,20 +105,16 @@ boxFilterPokemons(dataPoke);
 
 // Pokemons por tipo 
 
-const typePokemons = document.getElementById('typePokemon');
-const showTypePokemons = document.getElementById('boxTypePokemons');
-
 typePokemons.addEventListener('change', () => {
   boxTypePokemons.innerHTML = '';
-  boxFilterPokemons(filterData(dataPoke, typePokemon.value));
+  boxFilterPokemons(filterData(dataPoke, typePokemons.value));
 });
 
-// muestra el calculo matemático
+// Calculo Matemático
 
-/* const calculatePoke = document.getElementById("CalculatePokemonGo");
-const resulteCalculate = document.getElementById("calculatePk");
+const clikCalculo = () => {
+  const nuevoPromedio = calculoPromedio(dataPoke, pokeType);
+  return typePokemons.value = nuevoPromedio;
+};
 
-calculatePoke.addEventListener("click", (calculatePokemon) => {
-    calculatePokemon.innerHTML = '';
-    resulteCalculate(calculate(dataPoke, user))
-});*/
+porcentaje.addEventListener('click', clikCalculo);

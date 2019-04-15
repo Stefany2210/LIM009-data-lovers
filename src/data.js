@@ -1,20 +1,21 @@
 // Función para ordenar de la A-Z y de la Z-A
 
-const sortData = (data, sortOrder) => {
-  const order = data.sort((ab, bc) => { 
-    if (ab.name > bc.name) {
-      return 1;
-    } else if (ab.name < bc.name) {
-      return -1;
-    }  
-  });
-  if (sortOrder === 'Asc') {
-    return order;
-  } else if (sortOrder === 'Desc') {
-    return order.reverse();
-  }
+const compareName = (letraA, letraB) => {
+  if (letraA.name > letraB.name)
+    return 1;
+  if (letraA.name < letraB.name)
+    return -1;
+  return 0;
 };
-
+const sortData = (dataPoke, sortByOrder) => {
+  let sortNewData = dataPoke.sort(compareName);
+  if (sortByOrder === 'AZ') {
+    return sortNewData;
+  } else if (sortByOrder === 'ZA') {
+    return sortNewData.reverse();
+  }
+  return dataPoke;
+};
 window.sortData = sortData;
 
 // Función filtrar por tipo 
@@ -30,17 +31,12 @@ const filterData = (dataPoke, typePokemon) => {
   }
   return newArrType;
 };
+
 window.filterData = filterData;
 
 // Función calculo matemático
 
-const calculate = (dataPoke, user) => {
-  return dataPoke.length - user;
+const calculoPromedio = (dataPoke, pokeType) => {
+  return (dataPoke.length / 100) * (pokeType.length);
 };
-window.calculate = calculate;
-
-window.pokemon = { 
-  filterData: filterData,
-  sortData: sortData,
-  calculate: calculate
-};
+window.calculoPromedio = calculoPromedio;

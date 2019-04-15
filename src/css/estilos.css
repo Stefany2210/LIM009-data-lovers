@@ -10,10 +10,9 @@
     box-sizing: border-box;
 }
 
-#second, #third {
+#second, #third, #fourth {
     display: none;
 }
-
 
 header .contenedor{
     display: table;
@@ -35,6 +34,18 @@ header .contenedor{
 }
 
 #sectionspok {
+    text-align: center;
+}
+
+#second {
+    text-align: center;
+}
+
+#third {
+    text-align: center;
+}
+
+#fourth {
     text-align: center;
 }
 
@@ -96,26 +107,30 @@ section {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 100px;
-    
+    width: 50%;
+    padding: 20px;
+    display: inline-flex;
   }
-      
+  
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
-      
+  
   .container {
     padding: 2px 16px;
-    text-align: center; 
   }
   
-  .boxAllPokemons {
-    display: flex;
-  }
-  
-  #boxPokemons {
+.boxAllPokemons {
     display: inline-block;
-  }
+}
+
+footer{
+    padding:10px;
+    margin-top:10px;
+    color:#ffffff;
+    background-color:#7a7978;
+    text-align: center;
+}
 
 @media (max-width:768px) {
 
