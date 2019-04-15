@@ -3,7 +3,7 @@ const toSecondPage = document.getElementById('secondPage');
 const toThirdPage = document.getElementById('thirdPage');
 const tofourthPage = document.getElementById('fourthPage');
 const boxPokemons = document.getElementById('boxPokemons');
-const boxTypePokemons = document.getElementById(' boxTypePokemons');
+const boxTypePokemons = document.getElementById('boxTypePokemons');
 const listPokemon = document.getElementById('list-Pokemon');
 const boxAllPokemon = document.getElementById('boxAllPokemon');
 const Ascendente = document.getElementById('Ascendente');
@@ -24,6 +24,7 @@ function functionB() {
   document.getElementById('first').style.display = 'none';
   document.getElementById('bienvenidos').style.display = 'none';
   document.getElementById('third').style.display = 'block';
+  boxTypePokemons.innerHTML = '';
 }
 
 tofourthPage.addEventListener('click', functionC);
