@@ -9,6 +9,7 @@ const boxAllPokemon = document.getElementById('boxAllPokemon');
 const Ascendente = document.getElementById('Ascendente');
 const Descendente = document.getElementById('Descendente');
 const typePokemons = document.getElementById('typePokemons');
+const calculo = document.getElementById('calculo');
 const porcentaje = document.getElementById('porcentaje');
 
 toSecondPage.addEventListener('click', functionA);
@@ -74,14 +75,14 @@ boxOrderPokemons(dataPoke);
 
 // Ordenar desde la A hacia la Z
 
-Ascendente.addEventListener('click', function() {
+Ascendente.addEventListener('click', function () {
   boxPokemons.innerHTML = '';
   boxOrderPokemons(sortData(dataPoke, 'AZ'));
 });
 
 // Ordenar desde la Z hacia la A
 
-Descendente.addEventListener('click', function() {
+Descendente.addEventListener('click', function () {
   boxPokemons.innerHTML = '';
   boxOrderPokemons(sortData(dataPoke, 'ZA'));
 });
@@ -113,9 +114,8 @@ typePokemons.addEventListener('change', () => {
 
 // Calculo Matemático
 
-const clikCalculo = () => {
-  const nuevoPromedio = calculoPromedio(dataPoke, pokeType);
-  return typePokemons.value = nuevoPromedio;
-};
-
-porcentaje.addEventListener('click', clikCalculo);
+calculo.addEventListener('change', () => {
+  let nuevoPromedio = calculoPromedio(dataPoke, calculo.value);
+  porcentaje.innerHTML = nuevoPromedio;
+  return porcentaje;
+});
